@@ -1,6 +1,6 @@
 # Astronomy TypeScript definition file
 
-*Warning*: actually, only Astro.Class is defined.
+**Warning**: actually, only Astro.Class is defined.
 
 Combine power of Meteor Astronomy ([https://atmospherejs.com/jagi/astronomy](url)) library with TypeScript.
 
