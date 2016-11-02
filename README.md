@@ -9,7 +9,7 @@ Combine power of Meteor Astronomy ([https://atmospherejs.com/jagi/astronomy](url
  2. Open `tsconfig.json` and edit as below: 
 ```json
     "globalDependencies": {
-      "astronomy": "file:YOUR_RELATIVE_PATH/astronomy.d.ts"
+      "astronomy": "github:emilianosantucci/astronomy-ts/astronomy.d.ts#068ee124f5697b02564b01ae3d16fbfe9b0441dd"
     }
 ```
 
