@@ -1,3 +1,5 @@
 {
-  "dependencies": {}
+  "globalDependencies": {
+    "meteor-astronomy": "file:./.types/astronomy.d.ts"
+  }
 }
