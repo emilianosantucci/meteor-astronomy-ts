@@ -1,0 +1,22 @@
+{
+  "name": "meteor-astronomy-ts",
+  "version": "1.0.0",
+  "description": "Meteor Astronomy for TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emilianosantucci/astronomy-ts.git"
+  },
+  "author": "Emiliano Santucci <emiliano.santucci@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/emilianosantucci/astronomy-ts/issues"
+  },
+  "homepage": "https://github.com/emilianosantucci/astronomy-ts#readme",
+  "dependencies": {
+    "@types/meteor": "^1.3.31"
+  }
+}
