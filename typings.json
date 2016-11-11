@@ -1,5 +1,7 @@
 {
   "globalDependencies": {
-    "meteor-astronomy": "file:./.types/astronomy.d.ts"
+    "meteor-astronomy": "file:./.types/astronomy.d.ts",
+    "meteor": "registry:env/meteor",
+    "node": "registry:dt/node"
   }
 }
