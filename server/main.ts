@@ -1,18 +1,17 @@
-// import { Class } from 'meteor/jagi:astronomy';
+import { Astro } from 'meteor/jagi:astronomy';
 
 Meteor.startup(() => {
-    const Collection = new Mongo.Collection('test');
+    const Tests = new Mongo.Collection('test');
 
-    let Model: Class = Astro.Class.create({
+    const Test = Astro.Class.create({
         name: 'Model',
-        collection: Collection,
+        collection: Tests,
         fields: {
             name: String
         }
     });
 
-    let myModel1 = new Model();
-    myModel1.name = 'Prova';
-    console.log(myModel1);
-    myModel1.save();
+    let myTest = new Test();
+    myTest.name = 'My test';
+    myTest.save();
 });
