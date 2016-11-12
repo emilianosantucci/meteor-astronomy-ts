@@ -1,20 +1,27 @@
-# Astronomy TypeScript definition file
+## Meteor Astronomy for TypeScript
 
-**Warning**: actually, only Astro.Class is defined.
+[Meteor Astronomy](https://atmospherejs.com/jagi/astronomy) is a powerful model layer for [Meteor](https://www.meteor.com) written on pure EcmaScript6. 
 
-Combine power of Meteor Astronomy ([https://atmospherejs.com/jagi/astronomy](url)) library with TypeScript.
+If you want to use it with **Typescript**, you are in right place.
 
-## Installation
- 1. Copy `astronomy.d.ts` on your project.
- 2. Open `tsconfig.json` and edit as below: 
+### Installation
+1. Add **meteor-astronomy** to your project: `meteor add jagi:astronomy`
+2. Open `tsconfig.json` and add it: 
 ```json
-    "globalDependencies": {
-      "astronomy": "github:emilianosantucci/astronomy-ts/astronomy.d.ts#068ee124f5697b02564b01ae3d16fbfe9b0441dd"
+    {
+        "globalDependencies": {
+          "meteor-astronomy": "github:emilianosantucci/meteor-astronomy-ts/.types/astronomy.d.ts"
+        }
     }
 ```
+3. Launch `typings install`.
 
-Finally, launch `typings install`.
+## Example
+
+If you want try it before add to your project:
+1. Clone this project: `git clone https://github.com/emilianosantucci/meteor-astronomy-ts`
+2. Launch meteor: `meteor`
 
 ## License
 
-Astronomy TS is released under the [MIT License](http://opensource.org/licenses/MIT).
+Meteor Astronomy TS is released under the [MIT License](http://opensource.org/licenses/MIT).
