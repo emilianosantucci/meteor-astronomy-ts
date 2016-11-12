@@ -5,6 +5,7 @@
 If you want to use it with **Typescript**, you are in right place.
 
 ### Installation
+
 1. Add **meteor-astronomy** to your project: `meteor add jagi:astronomy`
 2. Open `tsconfig.json` and add it: 
 ```json
@@ -19,6 +20,7 @@ If you want to use it with **Typescript**, you are in right place.
 ## Example
 
 If you want try it before add to your project:
+
 1. Clone this project: `git clone https://github.com/emilianosantucci/meteor-astronomy-ts`
 2. Launch meteor: `meteor`
 
