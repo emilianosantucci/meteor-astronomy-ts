@@ -11,7 +11,7 @@ If you want to use it with **Typescript**, you are in right place.
 ```json
 {
     "globalDependencies": {
-      "meteor-astronomy": "github:emilianosantucci/meteor-astronomy-ts/.types/astronomy.d.ts#955b76a40676979419860e088aa1e58566eac45e"
+      "meteor-astronomy": "github:emilianosantucci/meteor-astronomy-ts/.types/astronomy.d.ts#0c2adad0ade366e23ceea6ac64ffd462e52cbab5"
     }
 }
 ```
