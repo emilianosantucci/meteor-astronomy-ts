@@ -23,13 +23,13 @@ declare module 'meteor/jagi:astronomy' {
             validateAll(options?: any, callback?: Function);
         }
 
-        var Module: ModuleStatic;
+        let Module: ModuleStatic;
         interface ModuleStatic extends AstronomyStatic<Module> {
             forEach(iteratee: any);
             get(name: string): Module;
         }
 
-        interface Module {
+        interface Module extends ModuleStatic {
             new();
             [property: string]: any;
             constructor(definition: any);
@@ -41,21 +41,21 @@ declare module 'meteor/jagi:astronomy' {
             onMergeDefinitions(targetDefinition: any, sourceDefinition: any, className: any);
         }
 
-        var Type: TypeStatic;
+        let Type: TypeStatic;
         interface TypeStatic extends AstronomyStatic<Type> {
             has(name: string): boolean;
             find(Class: Class): Type;
             get(name: string): Type;
         }
 
-        interface Type {
+        interface Type extends TypeStatic {
             new();
             [property: string]: any;
             cast(value: any): any;
             validate(doc: any, fieldName: string);
         }
 
-        var Class: ClassStatic;
+        let Class: ClassStatic;
         interface ClassStatic extends AstronomyStatic<Class> {
             getName(): string;
             getParent(): string;
@@ -66,33 +66,32 @@ declare module 'meteor/jagi:astronomy' {
             includes(Class: Class): any;
             isParentOf(Class: Class): boolean;
             isChildOf(Class: Class): boolean;
-            get(name: string): Class;
         }
 
-        interface Class extends ReservedWords {
+        interface Class extends ClassStatic, ReservedWords {
             new();
             constructor(rawDoc?: any, options?: any);
             [property: string]: any;
         }
 
-        var Enum: EnumStatic;
+        let Enum: EnumStatic;
         interface EnumStatic extends AstronomyStatic<Enum> {
 
         }
 
-        interface Enum {
+        interface Enum extends EnumStatic {
             new();
             [property: string]: any;
             getIdentifiers(): any;
             getIdentifier(value: any): any;
         }
 
-        var Config = ConfigConstants;
-        const ConfigConstants = {
-            verbose: true,
-            resolving: true
-        };
+        let Config: ConfigConstants;
+        interface ConfigConstants {
+            verbose: boolean;
+            resolving: boolean
+        }
     }
 
-    export var Astro = Astronomy;
+    export let Astro = Astronomy;
 }
