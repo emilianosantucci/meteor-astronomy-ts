@@ -59,8 +59,8 @@ declare module 'meteor/jagi:astronomy' {
         interface ClassStatic extends AstronomyStatic<Class> {
             getName(): string;
             getParent(): string;
-            getChildren(depth: number | boolean): Class[];
-            inherit(definition: any): Class;
+            getChildren(depth: number | boolean): any[];
+            inherit(definition: any): any;
             extend(extendDefinition: any, onlyModules: any): any;
             has(className: string): boolean;
             includes(Class: Class): any;
