@@ -7,7 +7,7 @@ If you want to use it with **Typescript**, you are in right place.
 ### Installation
 
 1. Add **meteor-astronomy** to your project: `meteor add jagi:astronomy`
-2. Open `tsconfig.json` and add it: 
+2. Open `typings.json` and add it: 
 ```json
 {
     "globalDependencies": {
